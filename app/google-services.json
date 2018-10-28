@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "106441526516",
+    "firebase_url": "https://loginapp-a497b.firebaseio.com",
+    "project_id": "loginapp-a497b",
+    "storage_bucket": "loginapp-a497b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106441526516:android:2558d7e0d004ae52",
+        "android_client_info": {
+          "package_name": "com.example.rishikeshwar.finalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106441526516-n4g6ne9i4s73inog7tm04ba3eb2sreis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtLLzQP785f32f9loeEKwGXHeYfK0ThCE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
