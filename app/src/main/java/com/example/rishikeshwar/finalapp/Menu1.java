@@ -1,6 +1,7 @@
 package com.example.rishikeshwar.finalapp;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -88,29 +89,70 @@ public class Menu1 extends Fragment
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(layoutManager);
 
-        DataNoteImformation k = new DataNoteImformation();
-        ArrayList data = new ArrayList<DataNote>();
-        for(int i =0 ;i < 8;i++) {
-            Log.d("checking", String.valueOf(k.subjectArray[i]));
-        }
+        final ArrayList data = new ArrayList<DataNote>();
 
-        for (int i = 0; i < k.hourArray.length; i++)
-        {
-            data.add(
-                    new DataNote
-                            (
-                                    k.hourArray[i],
-                                    k.subjectArray[i],
-                                    k.facultyArray[i]
-                            ));
-        }
-        Log.d("checking", "what the ");
-        for(int i =0 ;i < 8;i++) {
-            Log.d("checking", String.valueOf(k.subjectArray[i]));
-        }
-        mListadapter = new ListAdapter(data);
-        mRecyclerView.setAdapter(mListadapter);
 
+
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final FirebaseDatabase database2 = FirebaseDatabase.getInstance();
+
+        database.getReference().child("TimeTable").child("CSEA").addListenerForSingleValueEvent(new ValueEventListener() {
+
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                int i = 0;
+                for (DataSnapshot user : dataSnapshot.getChildren()) {
+                    for (DataSnapshot booksSnapshot : user.getChildren()) {
+                        String key = booksSnapshot.getKey();
+                        Object value = booksSnapshot.getValue();
+                        data.add(
+                                new DataNote
+                                        (
+                                                "Hour: " + String.valueOf(i + 1),
+                                                "Subject: " + value.toString(),
+                                                "Faculty: " + value.toString()
+                                        ));
+                        i++;
+
+
+
+                    }
+                }
+                database2.getReference().child("TimeTable").child("CSEA").addListenerForSingleValueEvent(new ValueEventListener() {
+
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        int i = 0;
+                        for (DataSnapshot user : dataSnapshot.getChildren()) {
+                            for (DataSnapshot booksSnapshot : user.getChildren()) {
+                                String key = booksSnapshot.getKey();
+                                Object value = booksSnapshot.getValue();
+
+                                Object k = (DataNote) data.get(i);
+                                Log.d("checking", ((DataNote) k).faculty);
+                                data.set(i++, new DataNote(((DataNote) k).hour,
+                                        ((DataNote) k).subject,
+                                        "Faculty: " + "Santhanalakshmi"));
+                            }
+                        }
+
+                        mListadapter = new ListAdapter(data);
+                        mRecyclerView.setAdapter(mListadapter);
+                    }
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                    }
+                });
+
+
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+            }
+        });
+
+
+        Log.d("checking", "Everything Done ");
         return view;
     }
 
@@ -132,6 +174,7 @@ public class Menu1 extends Fragment
             public ViewHolder(View itemView)
             {
                 super(itemView);
+                itemView.setBackgroundColor(Color.parseColor("#ffff80"));
                 this.textViewHour = (TextView) itemView.findViewById(R.id.textViewHour);
                 this.textViewSubject = (TextView) itemView.findViewById(R.id.textViewSubject);
                 this.textViewFaculty = (TextView) itemView.findViewById(R.id.textViewFaculty);
@@ -148,7 +191,7 @@ public class Menu1 extends Fragment
         }
 
         @Override
-        public void onBindViewHolder(ListAdapter.ViewHolder holder, final int position)
+        public void onBindViewHolder(final ListAdapter.ViewHolder holder, final int position)
         {
             holder.textViewHour.setText(dataList.get(position).getHour());
             holder.textViewSubject.setText(dataList.get(position).getSubject());
@@ -159,6 +202,7 @@ public class Menu1 extends Fragment
                 @Override
                 public void onClick(View v)
                 {
+                    holder.itemView.setBackgroundColor(Color.parseColor("#FFFFFF"));
                     Toast.makeText(getActivity(), "Item " + position + " is clicked.", Toast.LENGTH_SHORT).show();
                 }
             });
@@ -169,62 +213,6 @@ public class Menu1 extends Fragment
         {
             return dataList.size();
         }
-    }
-}
-
-class DataNoteImformation
-{
-    public static String[] hourArray =  new String[8];
-    public static String[] subjectArray = new String[8];
-    public static String[] facultyArray = new String[8];
-
-    DataNoteImformation() {
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        //final CountDownLatch done = new CountDownLatch(8);
-
-
-        database.getReference().child("TimeTable").child("CSEA").addListenerForSingleValueEvent(new ValueEventListener() {
-
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                int i = 0;
-                for (DataSnapshot user : dataSnapshot.getChildren()) {
-                    for (DataSnapshot booksSnapshot : user.getChildren()) {
-                        String key = booksSnapshot.getKey();
-                        Object value = booksSnapshot.getValue();
-
-                        hourArray[i] = String.valueOf(i + 1);
-                        facultyArray[i] = value.toString();
-                        subjectArray[i] = value.toString();
-                        Log.d("checking", subjectArray[i]);
-                        for(int p = 0; p < 100000; p++) {
-                            Log.d("Rishi", "Rishi ");
-                        }
-                        i++;
-
-                        //done.countDown();
-
-
-                        /*TableRow tr1 = new TableRow(x);
-                        TextView textview = new TextView(x);
-                        textview.setTextSize(15);
-                        textview.setText("Username: " + value);
-                        tr1.addView(textview);
-                        userTable.addView(tr1);*/
-                    }
-
-
-                }
-
-            }
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-            }
-        });
-
-        //done.await();
-
     }
 }
 

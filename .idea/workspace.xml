@@ -85,12 +85,12 @@
       </file>
       <file leaf-file-name="content_logged_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_logged_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
+          <provider editor-type-id="text-editor">
             <state relative-caret-position="374">
               <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2">
+          <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
         </entry>
@@ -98,10 +98,16 @@
       <file leaf-file-name="Menu1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rishikeshwar/finalapp/Menu1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+            <state relative-caret-position="453">
+              <caret line="204" column="80" selection-start-line="204" selection-start-column="80" selection-end-line="204" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#5459#5460#0" expanded="true" />
+                <element signature="e#5503#5504#0" expanded="true" />
+                <element signature="e#7437#7797#0" expanded="true" />
+                <element signature="e#7796#7797#0" expanded="true" />
+                <element signature="e#7169#7170#0" expanded="true" />
+                <element signature="e#7215#7216#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,6 +134,9 @@
         <option value="layoutResourceFile" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -2437,15 +2446,15 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rishikeshwar/finalapp/DataNoteInformation.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rishikeshwar/finalapp/LoggedMainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_logged_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_menu_1.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/recycler_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_logged_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rishikeshwar/finalapp/Menu1.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="974" />
@@ -2456,27 +2465,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
-            <path>
-              <item name="FinalApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="FinalApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="FinalApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="finalapp" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
             <path>
               <item name="FinalApp" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
@@ -2485,6 +2478,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2618,23 +2612,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Preview" order="3" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32900432" />
-      <window_info anchor="bottom" id="Logcat" order="7" visible="true" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="7" visible="true" weight="0.32900432" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16311301" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16311301" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32575756" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -2643,7 +2638,6 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Preview" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -2672,6 +2666,12 @@
           <caret line="183" column="56" selection-start-line="183" selection-start-column="56" selection-end-line="183" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5459#5460#0" expanded="true" />
+            <element signature="e#5503#5504#0" expanded="true" />
+            <element signature="e#7437#7797#0" expanded="true" />
+            <element signature="e#7796#7797#0" expanded="true" />
+            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2763,6 +2763,12 @@
           <caret line="179" column="45" selection-start-line="179" selection-start-column="45" selection-end-line="179" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5459#5460#0" expanded="true" />
+            <element signature="e#5503#5504#0" expanded="true" />
+            <element signature="e#7437#7797#0" expanded="true" />
+            <element signature="e#7796#7797#0" expanded="true" />
+            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2854,6 +2860,12 @@
           <caret line="78" column="68" lean-forward="true" selection-start-line="78" selection-start-column="68" selection-end-line="78" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5459#5460#0" expanded="true" />
+            <element signature="e#5503#5504#0" expanded="true" />
+            <element signature="e#7437#7797#0" expanded="true" />
+            <element signature="e#7796#7797#0" expanded="true" />
+            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3041,16 +3053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_logged_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_logged_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -3088,12 +3090,28 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_logged_main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/rishikeshwar/finalapp/Menu1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+        <state relative-caret-position="453">
+          <caret line="204" column="80" selection-start-line="204" selection-start-column="80" selection-end-line="204" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5459#5460#0" expanded="true" />
+            <element signature="e#5503#5504#0" expanded="true" />
+            <element signature="e#7437#7797#0" expanded="true" />
+            <element signature="e#7796#7797#0" expanded="true" />
+            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
           </folding>
         </state>
       </provider>
