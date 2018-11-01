@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             if(email.equals("rishikeshwar1@gmail.com")) {
                 allUsersButton.setVisibility(Button.VISIBLE);
             } else {
-                allUsersButton.setVisibility(Button.INVISIBLE);
+                allUsersButton.setVisibility(Button.VISIBLE);
             }
         } else {
             allUsersButton.setVisibility(Button.INVISIBLE);

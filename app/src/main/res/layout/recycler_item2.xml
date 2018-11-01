@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dip"
+    android:layout_marginRight="50dip"
+    android:layout_marginTop="20dip"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dip">
+
+        <TextView
+            android:id="@+id/textViewHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Hour: 1"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/emptyLine"
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/textViewHour"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray" />
+
+
+
+        <LinearLayout
+            android:id="@+id/subjectLayout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyLine"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="CSEA SEM2"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#CCCCCC"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <!--<TextView
+            android:id="@+id/textViewSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject: Computational Intelligence"
+            android:textSize="17dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@id/emptyLine"
+            />-->
+
+        <View
+            android:id="@+id/emptyLine2"
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/subjectLayout"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <View
+            android:id="@+id/verticalLine"
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/emptyLine"
+            android:background="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textViewHour2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/verticalLine"
+            android:text="Hour: 2"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/subjectLayout2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyLine"
+            android:layout_toRightOf="@id/verticalLine"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSubject2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="CSEA SEM2"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#CCCCCC"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/verticalLine2"
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/subjectLayout2"
+            android:background="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textViewHour3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/verticalLine2"
+            android:text="Hour: 3"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/subjectLayout3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyLine"
+            android:layout_toRightOf="@id/verticalLine2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSubject3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="CSEA SEM2"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#CCCCCC"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/verticalLine3"
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/subjectLayout3"
+            android:background="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textViewHour4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/verticalLine3"
+            android:text="Hour: 4"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/subjectLayout4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyLine"
+            android:layout_toRightOf="@id/verticalLine3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSubject4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="CSEA SEM2"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#CCCCCC"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/verticalLine4"
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/subjectLayout4"
+            android:background="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textViewHour5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/verticalLine4"
+            android:text="Hour: 5"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/subjectLayout5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyLine"
+            android:layout_toRightOf="@id/verticalLine4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSubject5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="CSEA SEM2"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#CCCCCC"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/verticalLine5"
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/subjectLayout5"
+            android:background="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textViewHour6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/verticalLine5"
+            android:text="Hour: 6"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/subjectLayout6"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyLine"
+            android:layout_toRightOf="@id/verticalLine5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSubject6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="CSEA SEM2"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#CCCCCC"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/verticalLine6"
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/subjectLayout6"
+            android:background="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textViewHour7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/verticalLine6"
+            android:text="Hour: 7"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/subjectLayout7"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyLine"
+            android:layout_toRightOf="@id/verticalLine6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSubject7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="CSEA SEM2"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#CCCCCC"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/verticalLine7"
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/subjectLayout7"
+            android:background="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textViewHour8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/verticalLine7"
+            android:text="Hour: 8"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/subjectLayout8"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyLine"
+            android:layout_toRightOf="@id/verticalLine7"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSubject8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="CSEA SEM2"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#CCCCCC"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/verticalLine8"
+            android:layout_width="3dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/subjectLayout7"
+            android:background="@color/colorBlack" />
+
+        <!--<TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text"
+            android:layout_toLeftOf="@+id/date"
+            android:text="comment"
+            android:paddingLeft="5dip"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="date" />-->
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
